@@ -16,3 +16,14 @@ $(document).ready(function () {
     $(".modal:visible").each(alignModal);
   });
 });
+
+//to hide the sign-in modal when signUp link clicked
+
+function notAMember() {
+  document.getElementById("sign-in").innerHTML = "";
+}
+
+//to refresh the page when signup cross button clicked
+function pageReload() {
+  window.location.href = "index.html";
+}

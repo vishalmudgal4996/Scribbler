@@ -28,6 +28,10 @@
   }
 }
 
-.btn-width{
-    width:100%;
+.btn-width {
+  width: 100%;
+}
+
+.custom-footer {
+  text-align: center;
 }
