@@ -19,10 +19,15 @@
 }
 
 .entry-point {
-  background-color: blue;
-  color: white;
-  padding: 8px;
-  border: none;
   margin-right: 10px;
-  font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-sm {
+    width: 380px; /* New width for small modal */
+  }
+}
+
+.btn-width{
+    width:100%;
 }
