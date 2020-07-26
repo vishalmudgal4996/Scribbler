@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Montez", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: Montez, serif;
+  font-size: 2em;
+  color: blue;
+}
+
+.sub-heading {
+  font-family: serif;
+  font-size: 1em;
+}
+
+.entry-point {
+  background-color: blue;
+  color: white;
+  padding: 8px;
+  border: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
