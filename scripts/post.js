@@ -63,7 +63,6 @@ function updateEditedBlog() {
   bEditUpdate.innerHTML = toggleTitileSave;
 }
 function addComment() {
-  console.log("Inside add comment");
   var x = document
     .getElementById("txtCommentCommentPost")
     .addEventListener("onchange", function () {
@@ -72,8 +71,15 @@ function addComment() {
 
   var x = document.getElementById("txtCommentCommentPost").value;
 
-  console.log("x:" + x);
   var pElement = "<p >" + x + "</p>";
   var getDiv = document.getElementById("listAllComments");
-  getDiv.innerHTML = pElement + getDiv.innerHTML;
+  //   getDiv.innerHTML = pElement + getDiv.innerHTML;
+}
+
+function addComments(id) {
+  var addEventName = id.value + "<br>";
+  var a = document.getElementById("userComments");
+  document.getElementById("addEventNames").innerHTML +=
+    "<p class='comment-para'>" + addEventName + "</p>";
+  a.value = a.defaultValue;
 }

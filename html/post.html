@@ -198,16 +198,18 @@
         </div>
 
 
-        <div class="commentPost">
+        <!-- <div class="commentPost">
             <textarea id="txtCommentCommentPost" class="commentPost" rows="4" cols="100"
                 placeholder="Leave a comment"></textarea>
-        </div>
-        <button class="postLike" onclick="addComment()">Comment</button>
+        </div> -->
         <div class="commentSection">
             <h3>All Comments</h3>
-            <div class="allComments" id="listAllComments">
-
-            </div>
+            <div class="allComments" id="listAllComments"></div>
+            <textarea type="textarea" placeholder="Leave a comment" id="userComments" rows="4" cols="100"
+                value=""></textarea>
+            <br>
+            <button id="addList" onclick="addComments(userComments)" class="postLike">Comment</button>
+            <div id="addEventNames"></div>
         </div>
 
     </div>

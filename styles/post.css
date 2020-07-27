@@ -72,3 +72,13 @@ html {
   display: table-cell;
   overflow: scroll;
 }
+
+.event-div {
+  width: 35%;
+}
+
+.comment-para {
+  background-color: grey;
+  padding: 10px;
+  color: white;
+}
