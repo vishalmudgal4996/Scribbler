@@ -16,6 +16,9 @@ html {
   height: 130px;
   border-radius: 15px;
   overflow: hidden;
+}
+
+.post-card:hover {
   box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
     0 4px 20px 0 rgba(79, 19, 97, 0.19);
 }
@@ -66,4 +69,18 @@ html {
 .item-3 {
   display: flex;
   justify-content: flex-end;
+}
+
+.grid-container {
+  margin-top: 60px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-gap: 25px 100px;
+}
+
+.grid-item-5 {
+  grid-column: auto / span 2;
+  justify-self: center;
 }
