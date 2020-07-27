@@ -8,4 +8,18 @@ html {
 
 body {
   margin: 12px;
+  background: url(/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.custom-btn {
+  margin-right: 15px;
 }
