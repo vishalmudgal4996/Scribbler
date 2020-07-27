@@ -17,18 +17,22 @@ $(document).ready(function () {
   });
 });
 
-//to hide the sign-in modal when signUp link clicked
-
-function notAMember() {
-  document.getElementById("sign-in").innerHTML = "";
+function showSignUpDialogOnly() {
+  var toggleVariable = document.getElementById("sign-in");
+  toggleVariable.style.display = "none";
 }
 
-//to refresh the page when signup cross button clicked
 function pageReload() {
-  window.location.href = "index.html";
+  var url = window.location.href;
+  window.location.href = url;
 }
 
 //to reset signin form
 function signIn() {
   document.getElementById("signin-form").reset();
+}
+
+//to reset signup form
+function signUp() {
+  document.getElementById("signup-form").reset();
 }
