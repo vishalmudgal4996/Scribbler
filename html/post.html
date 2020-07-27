@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="../styles/post.css" rel="stylesheet">
+    <link href="../styles/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../scripts/common.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        <div class="scribbler-container">
+            <span class="heading">ScriBBler</span><br>
+            <span class="sub-heading">Explore, Imagine, Create</span>
+        </div>
+        <div class="account">
+            <button type="button" class="btn btn-primary entry-point" data-toggle="modal" data-target="#sign-up"
+                id="sign-up-button" onclick="signUp()">
+                Sign Up
+            </button>
+            <button type="button" class="btn btn-primary entry-point" data-toggle="modal" data-target="#sign-in"
+                id="sign-in-button" onclick="signIn()">
+                Sign In
+            </button>
+        </div>
+    </div>
+
+    <!-- SignIn Modal -->
+    <div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h3" id="exampleModalLabel1">Welcome Back</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="signin-form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-width">Sign In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="custom-footer">
+                        <span>Not a member? </span><a data-toggle="modal" href="#sign-up"
+                            onclick="showSignUpDialogOnly()">Sign
+                            Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title h3" id="exampleModalLabel2">Get Started</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="pageReload()">
+                        <span aria-hidden=" true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="signup-form">
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailName"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+                                placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword3">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3"
+                                placeholder="Re-enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-width">Sign Up</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>
