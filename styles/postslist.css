@@ -84,3 +84,19 @@ html {
   grid-column: auto / span 2;
   justify-self: center;
 }
+
+.sub-item-2:hover {
+  cursor: pointer;
+}
+.sub-item-3:hover {
+  cursor: pointer;
+}
+
+.custom-deletepost-btn {
+  width: 25%;
+}
+
+.delete-post-btn-container {
+  display: flex;
+  justify-content: space-between;
+}
