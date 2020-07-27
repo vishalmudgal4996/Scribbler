@@ -27,3 +27,8 @@ function notAMember() {
 function pageReload() {
   window.location.href = "index.html";
 }
+
+//to reset signin form
+function signIn() {
+  document.getElementById("signin-form").reset();
+}

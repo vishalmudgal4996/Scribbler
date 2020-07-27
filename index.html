@@ -26,7 +26,7 @@
                 Sign Up
             </button>
             <button type="button" class="btn btn-primary entry-point" data-toggle="modal" data-target="#sign-in"
-                id="sign-in-button">
+                id="sign-in-button" onclick="signIn()">
                 Sign In
             </button>
         </div>
@@ -38,13 +38,13 @@
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title h3" id="exampleModalLabel">Welcome Back</h5>
+                    <h5 class="modal-title h3" id="exampleModalLabel1">Welcome Back</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="signin-form">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Username</label>
                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
@@ -73,7 +73,7 @@
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title h3" id="exampleModalLabel">Get Started</h5>
+                    <h5 class="modal-title h3" id="exampleModalLabel2">Get Started</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="pageReload()">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -86,18 +86,18 @@
                                 placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Username</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            <label for="exampleInputEmail2">Username</label>
+                            <input type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
                                 placeholder="Enter your username" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
+                            <label for="exampleInputPassword2">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2"
                                 placeholder="Enter your password" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword2"
+                            <label for="exampleInputPassword3">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3"
                                 placeholder="Re-enter your password" required>
                         </div>
                         <button type="submit" class="btn btn-success btn-width">Sign Up</button>
@@ -111,9 +111,10 @@
 
     <div class="container">
         <div class="post-btn">
-            <button type="button" id="all-posts-btn" class="btn btn-warning custom-btn">All Posts</button>
+            <button type="button" id="all-posts-btn" class="btn btn-warning custom-btn" onclick="loadbloglist()">All
+                Posts</button>
             <button type="button" id="create-post-btn" class="btn btn-warning custom-btn" data-toggle="modal"
-                data-target="#create-post">Create Post</button>
+                data-target="#create-post" onclick="createPost()">Create Post</button>
         </div>
     </div>
 
@@ -123,35 +124,35 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title h3" id="exampleModalLabel">Welcome Back</h5>
+                    <h5 class="modal-title h3" id="exampleModalLabel3">Pen Your Post</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="createPost-form">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Username</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                                placeholder="Enter your username" required>
+                            <label for="exampleInputEmail3">Title</label>
+                            <input type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp"
+                                placeholder="Enter title of your post" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="Enter your password" required>
+                            <label for="exampleTextarea">Example textarea</label>
+                            <textarea class="form-control" id="exampleTextarea" rows="9"
+                                placeholder="Enter the contents of your post" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-success btn-width">Sign In</button>
                     </form>
                 </div>
                 <div class="modal-footer">
                     <div class="custom-footer">
-                        <span>Not a member? </span><a data-toggle="modal" href="#sign-up" onclick="notAMember()">Sign
-                            Up</a>
+                        <button type="button" class="btn btn-success">Create</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
