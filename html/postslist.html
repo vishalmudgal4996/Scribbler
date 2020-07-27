@@ -3,6 +3,7 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="../styles/postslist.css" rel="stylesheet">
@@ -11,6 +12,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../scripts/common.js"></script>
+
+    <style>
+        body {
+            background-color: #ffeedd;
+        }
+    </style>
 
 </head>
 
@@ -24,7 +31,7 @@
         </div>
         <div class="account">
             <button type="button" class="btn btn-primary entry-point" data-toggle="modal" data-target="#sign-up"
-                id="sign-up-button">
+                id="sign-up-button" onclick="signUp()">
                 Sign Up
             </button>
             <button type="button" class="btn btn-primary entry-point" data-toggle="modal" data-target="#sign-in"
@@ -62,7 +69,8 @@
                 </div>
                 <div class="modal-footer">
                     <div class="custom-footer">
-                        <span>Not a member? </span><a data-toggle="modal" href="#sign-up" onclick="notAMember()">Sign
+                        <span>Not a member? </span><a data-toggle="modal" href="#sign-up"
+                            onclick="showSignUpDialogOnly()">Sign
                             Up</a>
                     </div>
                 </div>
@@ -77,11 +85,11 @@
                 <div class="modal-header">
                     <h5 class="modal-title h3" id="exampleModalLabel2">Get Started</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="pageReload()">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden=" true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="signup-form">
                         <div class="form-group">
                             <label for="exampleInputName1">Name</label>
                             <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailName"
@@ -117,23 +125,25 @@
     <div>
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="post-card">
+            <div class="username">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+            <div class="content">
+                <div class="item-1 item">
+                    <p class="sub-item sub-item-1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    <i class="fa fa-trash-o sub-item sub-item-2" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
-                    variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
-                    purpose, they are different.</p>
-                <span>
+                <p class="item-2 item">Since JavaScript does not have any type-checking, either of these keywords can be
+                    used
+                    to declare a
+                    variable of any type (datatype) in JavaScript. Though all the three keywords are </p>
+                <span class="item-3 item">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h sub-item sub-item-3" aria-hidden="true"></i>
                 </span>
             </div>
         </div>

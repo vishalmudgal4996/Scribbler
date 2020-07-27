@@ -6,7 +6,64 @@ html {
   min-height: 100vh;
 }
 
-body {
-  background-color: #ffeedd;
+.post-card {
+  border-style: ridge;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  width: 530px;
+  height: 130px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
+    0 4px 20px 0 rgba(79, 19, 97, 0.19);
 }
 
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 130px;
+  width: 35%;
+  padding: 2%;
+  font-weight: bolder;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  color: black;
+  height: 130px;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 100%;
+}
+
+.item-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin-left: 10px;
+}
+
+.sub-item-1 {
+  font-size: 16px;
+  color: grey;
+}
+
+.item-2 {
+  padding: 0px;
+}
+
+.item-3 {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -18,8 +18,8 @@ $(document).ready(function () {
 });
 
 function showSignUpDialogOnly() {
-  var toggleVariable = document.getElementById("sign-in");
-  toggleVariable.style.display = "none";
+  var element = document.getElementById("sign-in");
+  element.innerHTML = "";
 }
 
 function pageReload() {
