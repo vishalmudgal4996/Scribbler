@@ -9,21 +9,57 @@ function toggleEditSave() {
         "<div id='savePostSection'><button id='savePost' class='post-btn'>Save <i class='fa fa-save'></i></button></div> ";
       document.getElementsByClassName("postButtons")[0].innerHTML = savePostbtn;
 
-      var element = document.getElementById("post-head");
-      element.classList.add("editable-border");
+      borderVisible();
 
-      var element = document.getElementById("post-msg");
-      element.classList.add("editable-border");
+      contentEditable();
     }
   } else {
     var editPostbtn =
       "<div id='editPostSection'><button id='editPost' class='post-btn'>Edit <i class='fa fa-pencil-square-o'></i></button></div>";
     document.getElementsByClassName("postButtons")[0].innerHTML = editPostbtn;
 
-    var element = document.getElementById("post-head");
-    element.classList.remove("editable-border");
+    borderInvisible();
 
-    var element = document.getElementById("post-msg");
-    element.classList.remove("editable-border");
+    contentNotEditable();
   }
+}
+
+//making editable border visible
+
+function borderVisible() {
+  var elementHead = document.getElementById("post-head");
+  elementHead.classList.add("editable-border");
+
+  var elementMsg = document.getElementById("post-msg");
+  elementMsg.classList.add("editable-border");
+}
+
+//making editable border invisible
+
+function borderInvisible() {
+  var elementHead = document.getElementById("post-head");
+  elementHead.classList.remove("editable-border");
+
+  var elementMsg = document.getElementById("post-msg");
+  elementMsg.classList.remove("editable-border");
+}
+
+//making content editable
+
+function contentEditable() {
+  var elementHead = document.getElementById("post-head");
+  elementHead.contentEditable = "true";
+
+  var elementMsg = document.getElementById("post-details-para-subItem-1");
+  elementMsg.contentEditable = "true";
+}
+
+// making content Non editable
+
+function contentNotEditable() {
+  var elementHead = document.getElementById("post-head");
+  elementHead.contentEditable = "false";
+
+  var elementMsg = document.getElementById("post-details-para-subItem-1");
+  elementMsg.contentEditable = "false";
 }
