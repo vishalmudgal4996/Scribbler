@@ -58,3 +58,15 @@ html {
 .editable-border {
   border: 2px solid pink;
 }
+
+.postLike {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#likeBlog {
+  margin-bottom: 10px;
+}

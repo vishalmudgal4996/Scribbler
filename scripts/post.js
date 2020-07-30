@@ -63,3 +63,15 @@ function contentNotEditable() {
   var elementMsg = document.getElementById("post-details-para-subItem-1");
   elementMsg.contentEditable = "false";
 }
+
+//like counter functionality
+
+var likeCounter = 0;
+
+function postLiked() {
+  var likeElement = document.getElementById("commentCount");
+  var buttonElement = document.getElementById("likeBlog");
+  likeCounter++;
+  likeElement.innerHTML = likeCounter + " person likes this!";
+  buttonElement.innerHTML = "<i class='fa fa-thumbs-up'> Liked!</i>";
+}
