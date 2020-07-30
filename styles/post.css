@@ -84,3 +84,28 @@ html {
 #userComments {
   margin-bottom: 10px;
 }
+
+.commentEvent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.visible {
+  background-color: grey;
+  width: 77%;
+  padding: 1.5%;
+}
+
+.hide {
+  display: none;
+}
+
+.comment-para {
+  width: 100%;
+  background-color: white;
+  font-family: monospace;
+  padding: 1.4%;
+}

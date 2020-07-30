@@ -77,6 +77,20 @@ function postLiked() {
 }
 
 //comment post functionality
-function addComments(userComments){
-  
+var commentPost = [];
+
+function addComments(id) {
+  var addEventName = id.value + "<br>";
+  var event = document.getElementById("userComments");
+  var eventNames = document.getElementById("addEventNames");
+
+  commentPost.push(addEventName);
+  eventNames.innerHTML += "<p class = 'comment-para'>" + addEventName + "</p>";
+
+  //add and remove class to addEventNames
+  eventNames.classList.remove("hide");
+  eventNames.classList.add("visible");
+
+  //setting default value to textarea
+  event.value = event.defaultValue;
 }
