@@ -75,3 +75,8 @@ function postLiked() {
   likeElement.innerHTML = likeCounter + " person likes this!";
   buttonElement.innerHTML = "<i class='fa fa-thumbs-up'> Liked!</i>";
 }
+
+//comment post functionality
+function addComments(userComments){
+  
+}

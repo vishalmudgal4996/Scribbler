@@ -46,7 +46,7 @@ html {
   color: white;
   background-color: #e60073;
   border: none;
-  padding: 5px;
+  padding: 10px;
 }
 
 .post-details-para {
@@ -68,5 +68,19 @@ html {
 }
 
 #likeBlog {
+  margin-bottom: 10px;
+}
+
+.postComment {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#userComments {
   margin-bottom: 10px;
 }
