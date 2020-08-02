@@ -17,16 +17,6 @@ $(document).ready(function () {
   });
 });
 
-function showSignUpDialogOnly() {
-  var element = document.getElementById("sign-in");
-  element.innerHTML = "";
-}
-
-function pageReload() {
-  var url = window.location.href;
-  window.location.href = url;
-}
-
 //to reset signin form
 function signIn() {
   document.getElementById("signin-form").reset();
